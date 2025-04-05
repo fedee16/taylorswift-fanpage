@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: "Karla", sans-serif;
+    background-color: #0b0435;
+}
+
+
+
+/*estilos para la parte Taylor Swift*/
+
+.img-titulo {
+    display: block;
+    margin: 0 auto;
+    height: 150px; 
+    margin-top: 20px;
+    margin-bottom: 20px; 
+}
+
+#bio-y-mas {
+    display: flex;  
+    flex-direction: row;  
+    justify-content: space-around; 
+    gap: 20px; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 30px;
+}
+
+#bio-y-mas > span {
+    flex: 1; 
+    padding: 20px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.separador {
+    width: 80%; 
+    border: none; 
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px auto; 
+}
+
+
+/*estilos parte The Eras Tour*/
+#the-eras {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 20px; 
+    padding: 20px;
+    background-image: url(https://i.pinimg.com/736x/30/e5/fd/30e5fd7a6c2a23d906962d067fafc67f.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#img-tet {
+    width: 80%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+#tarjetas-eras {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    gap: 90px; 
+}
+
+#tarjetas-eras > span {
+    flex: 1;
+    min-width: 250px; 
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    
+}
+ 
+/* Estilos Generales */
+#timeline {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.timeline-container {
+    position: relative;
+    max-width: 800px;
+    margin: auto;
+}
+
+.titulo-h1  {
+    font-size: 50px;
+    color: aliceblue;
+    margin-bottom: 40px;
+} 
+
+/* Línea vertical */
+.timeline-container::after {
+    content: "";
+    position: absolute;
+    width: 4px;
+    background-color: #999;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Cada evento */
+.timeline-item {
+    position: relative;
+    background-color: #f9f9f9;
+    width: 45%;
+    padding: 15px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+/* Ubicación alternada */
+.timeline-item:nth-child(odd) {
+    left: 0;
+    text-align: right;
+}
+
+.timeline-item:nth-child(even) {
+    left: 55%;
+    text-align: left;
+}
+
+/* Puntos de la línea */
+.timeline-item::before {
+    content: "";
+    position: absolute;
+    top: 20px;
+    width: 20px;
+    height: 20px;
+    background-color: #742fe4;
+    border-radius: 50%;
+    left: 100%;
+    transform: translateX(-50%);
+}
+
+.timeline-item:nth-child(even)::before {
+    left: 0;
+    transform: translateX(-50%);
+}
+
+/* Estilo de la fecha */
+.timeline-date {
+    font-weight: bold;
+    font-size: 18px;
+    color: #742fe4;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .timeline-container::after {
+        left: 10px;
+    }
+
+    .timeline-item {
+        width: 100%;
+        left: 0;
+        text-align: left;
+        padding-left: 40px;
+    }
+
+    .timeline-item::before {
+        left: 10px;
+    }
+}
+
