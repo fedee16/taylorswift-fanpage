@@ -23,6 +23,22 @@ body{
     margin-bottom: 20px; 
 }
 
+.animation {
+    animation: anim1 4s 1;
+}
+
+@keyframes anim1 {
+    0% { 
+        transform: scale(0); 
+    }
+    50% { 
+        transform: scale(1.2); 
+    }
+    100% { 
+        transform: scale(1); 
+    }
+}
+
 #bio-y-mas {
     display: flex;  
     flex-direction: row;  
