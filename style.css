@@ -199,3 +199,54 @@ body{
     }
 }
 
+#feedback {
+  background-color: #f9f9f9;
+  padding: 40px 20px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+#feedback h2 {
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #444;
+}
+
+.form-feedback {
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+}
+
+.form-feedback label {
+  font-weight: bold;
+  color: #333;
+}
+
+.form-feedback input,
+.form-feedback textarea {
+  padding: 10px;
+  font-size: 1em;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form-feedback button {
+  background-color: #e60073;
+  color: white;
+  padding: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.form-feedback button:hover {
+  background-color: #b30059;
+}
